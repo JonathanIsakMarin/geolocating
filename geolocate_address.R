@@ -47,7 +47,7 @@ write.csv(geolocate2, file = "")
 
 # Use your geodata to make a nice interactive heatmap! 
 #Set intensity, size and "https://bhaskarvk.github.io/leaflet.extras/reference/heatmap.html"
-v = leaflet(data) %>%
+v = leaflet(geolocate) %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
   addWebGLHeatmap(lng=~LON, lat=~LAT,size=20,units='px', intensity=0.4)
 v
