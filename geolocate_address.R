@@ -52,5 +52,3 @@ v = leaflet(data) %>%
   addWebGLHeatmap(lng=~LON, lat=~LAT,size=20,units='px', intensity=0.4)
 v
 
-data = read.csv("august_town.csv")
-
